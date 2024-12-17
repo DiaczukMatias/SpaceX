@@ -2,7 +2,6 @@
 
 import React from "react";
 import styles from "./LandingView.module.css";
-import Image from "next/image";
 import Navbar from "@/Components/Navbar/Navbar";
 import { useRouter } from "next/navigation";
 
@@ -14,17 +13,20 @@ const LandingView = () => {
   return (
     <div className={styles.container}>
       <Navbar />
-      <div className={styles.logoContainer}>
-        <Image src="/logoo.png" alt="SpaceX Logo" width={1000} height={900} />
+      <div className={styles.contentContainer}>
+        <h1 className={styles.title}>STARLINK MISSION</h1>
+        <p className={styles.description}>
+          SpaceX, founded by visionary entrepreneur Elon Musk, is a pioneering
+          aerospace company dedicated to pushing the boundaries of space
+          exploration. With cutting-edge technology and a relentless drive for
+          innovation, SpaceX aims to drastically reduce the cost of space
+          travel, develop sustainable space infrastructure, and make humanity a
+          multiplanetary species, starting with the colonization of Mars.
+        </p>
+        <button onClick={handleLearnMore} className={styles.button}>
+          Learn More
+        </button>
       </div>
-      <p className={styles.description}>
-        SpaceX is an aerospace company founded by Elon Musk with the goal of
-        revolutionizing space exploration, reducing the cost of space travel,
-        and eventually enabling the colonization of Mars.
-      </p>
-      <button onClick={handleLearnMore} className={styles.button}>
-        Learn More
-      </button>
     </div>
   );
 };

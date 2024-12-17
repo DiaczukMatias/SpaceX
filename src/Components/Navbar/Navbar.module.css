@@ -11,15 +11,22 @@
   left: 0;
   right: 0;
   z-index: 1;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-right: 50px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 100px; /* Incrementar margen izquierdo */
+  margin-bottom: 20px;
 }
 
 .navLinks {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8rem; /* Aumenta el espacio a 3rem */
+  gap: 8rem;
   width: 80%;
   margin: 0 auto;
 }

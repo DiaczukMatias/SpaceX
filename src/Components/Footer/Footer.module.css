@@ -1,0 +1,14 @@
+/* components/Footer.module.css */
+.footer {
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
+  text-align: center;
+  padding: 20px 0; /* Espaciado arriba y abajo */
+  position: relative;
+  width: 100%;
+}
+
+.text {
+  margin: 0;
+  font-size: 1rem; /* Tamaño de fuente adecuado */
+}

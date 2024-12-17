@@ -1,0 +1,143 @@
+/* Estilo general del contenedor */
+.homeContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Imagen de fondo */
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.fullscreenImage {
+  object-fit: cover;
+}
+
+.gradientOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+/* Título */
+.title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  margin-top: 50px;
+  color: #fff;
+  z-index: 2;
+  margin-top: 10%; /* Desplazamos el carrusel hacia abajo */
+}
+
+/* Carousel */
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+  height: 40%; /* Ajustamos la altura para hacer más largo el espacio */
+  margin-top: 6%; /* Desplazamos el carrusel hacia abajo */
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.3); /* Fondo más transparente */
+  backdrop-filter: blur(10px); /* Efecto difuminado */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  width: 950px;
+  height: 400px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.missionName {
+  font-size: 1.5rem;
+  position: absolute; /* Fija el nombre de la misión */
+  top: 50px; /* Distancia desde la parte superior */
+  left: 50px; /* Distancia desde el lado izquierdo */
+  margin: 0; /* Elimina el margen para evitar desplazamientos */
+  padding: 0 20px; /* Añadimos padding para no estar pegado al borde */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+.details {
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Limita a 6 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 40px; /* Más margen a la izquierda */
+  margin-right: 40px; /* Más margen a la derecha */
+  text-align: justify; /* Alinea el texto a los extremos */
+}
+
+/* Estilos de los botones de los enlaces */
+.cardLinks {
+  padding: 0 20px; /* Añadimos padding para no estar pegado al borde */
+
+  margin-top: 38px; /* Distancia desde la parte superior */
+  right: 50px; /* Distancia desde el lado izquierdo */
+  position: absolute;
+  top: 10px; /* Distancia desde la parte superior */
+  right: 10px; /* Distancia desde el borde derecho */
+  display: flex;
+  gap: 10px; /* Espaciado entre los botones */
+}
+
+.buttonLink {
+  background-color: transparent; /* Fondo oscuro semi-transparente */
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Añadimos transición */
+}
+
+/* Efecto hover */
+.buttonLink:hover {
+  background: rgba(0, 0, 0, 0.3); /* Fondo más transparente */
+
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Efecto focus (cuando se hace clic en el botón) */
+.buttonLink:focus {
+  outline: none; /* Elimina el borde por defecto */
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.7); /* Agrega un brillo alrededor */
+}
