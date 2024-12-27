@@ -46,3 +46,45 @@
   text-align: center; /* Asegura que el texto esté centrado */
   font-weight: bold; /* Hace que el texto sea más prominente */
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Cambia la disposición a columna */
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logoContainer img {
+    width: 180px; /* Reduce el tamaño del logo */
+  }
+
+  .navLinks {
+    flex-direction: row; /* Mantiene los enlaces en una fila */
+    gap: 1.5rem; /* Reduce el espaciado */
+  }
+
+  .navLinks a {
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+  }
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.8rem;
+  }
+
+  .logoContainer img {
+    width: 150px; /* Tamaño más pequeño del logo */
+  }
+
+  .navLinks {
+    margin-right: 5px;
+    gap: 7rem; /* Menor espacio entre enlaces */
+  }
+
+  .navLinks a {
+    font-size: 1rem;
+  }
+}
